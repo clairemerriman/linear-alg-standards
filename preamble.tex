@@ -1,0 +1,49 @@
+
+
+\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{afterpage,makecell}
+% \usepackage[strict]{changepage}
+%\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\newcommand\unnumberedBlankpage{%
+\thispagestyle{empty}
+    You may use this page for scratch work. Note on the problem page if your work is on this page.
+    \addtocounter{page}{-1}%
+    \newpage}
+
+\newcommand\blankpage{\checkoddpage 
+    \ifthenelse{\boolean{oddpage}} %checks if written an odd number page
+    {} %if even number, do nothing
+    %add scratchwork page if there are
+    {You may use this page for scratch work. Note on the problem page if your work is on this page. \newpage}
+    
+    }
+
+    
+ \makeatletter %%Ignores missing \item 
+ \let\@noitemerr\relax
+ \makeatother
+
+\renewcommand{\vec}{\mathbf}
+\renewcommand{\i}{\vec{i}}
+\renewcommand{\j}{\vec{j}}
+\renewcommand{\k}{\vec{k}}
+\renewcommand{\u}{\vec{u}}
+\renewcommand{\v}{\vec{v}}
+\newcommand{\w}{\vec{w}}
+\newcommand{\x}{\vec{x}}
+\newcommand{\y}{\vec{y}}
+\newcommand{\z}{\vec{z}}
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\P}{\mathbb{P}}
+\renewcommand{\b}{\vec{b}}
+\newcommand{\mb}{\vec}
+\DeclareMathOperator{\Span}{Span}
+\DeclareMathOperator{\Col}{Col}
+\DeclareMathOperator{\Nul}{Nul}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\Row}{Row}
+\DeclareMathOperator{\proj}{proj}

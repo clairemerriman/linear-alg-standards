@@ -1,0 +1,29 @@
+%Final
+Standard 19.	Use the rank-nullity theorem to determine the dimension of the column and null spaces of a matrix as subspaces of $\R^n$.
+
+% If $A$ is a $7\times 5$ matrix.
+
+%         \begin{parts}
+%             \part What is the largest possible $\rank A$?
+            
+%             \part What is the smallest possible dimension for $\Nul A$?
+
+%             \part Is it possible for $\Nul A=\R^5$? If so, give a condition for when this happens.
+%         \end{parts}
+
+%includes pagebreak when solution is not printed
+\ifprintanswers
+\else %Stuff to appear only when answers are not being printed.
+ \newpage
+\fi
+
+\begin{solution}
+    \begin{parts}
+        \part Since $\rank A+\operatorname{dim}\Nul A=5,$ and the largest possible $\rank A$ is $5.$
+        
+        \part What is the smallest possible dimension for $\Nul A$? 
+        Since $\rank A+\operatorname{dim}\Nul A=5,$ the smallest possible $\operatorname{dim}\Nul A$ is $5.$
+
+        \part It is possible for $\Nul A=\R^5$ when $A$ is the zero matrix (or various no pivot columns, or 5 free variables)
+    \end{parts}
+\end{solution}

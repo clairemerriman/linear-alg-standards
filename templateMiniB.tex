@@ -1,0 +1,56 @@
+\documentclass[main.tex,14pt]{{subfiles}}
+
+\begin{{document}}
+\setcounter{{page}}{{0}}
+\thispagestyle{{empty}}
+
+{{\Large {name}}}%%%this is pulled from a csv by my python code
+
+{{Start time:\hrulefill\ End time: \hrulefill}}
+Time limit: \textbf{{35 minutes}}
+\ifprintanswers
+\else %Stuff to appear only when answers are not being printed.
+
+\vspace{{1cm}}
+{{\Large Instructions:}}
+\begin{{itemize}}
+
+ \item You have \textbf{{35 minutes}} to complete this exam.
+
+ \item The exam is closed-textbook, closed notes, and closed homework. 
+ 
+ \item No collaboration of any kind is permitted on this exam. Do not discuss the exam with anyone other than your instructor until after the graded exams are returned.
+ 
+ \item You may use a calculator that does not have internet access. 
+
+ \item \textbf{{Show all the steps of your work clearly}}. Demonstrating understanding includes clear explanations.
+ 
+\item Answer the questions on the Exam document. 
+
+
+\item Please do not distribute this exam once it is returned to you.
+
+
+
+ \end{{itemize}}
+
+
+\afterpage{{\blankpage}}
+
+\clearpage
+\fi
+{section_R4}
+
+\ifprintanswers
+\else %Stuff to appear only when answers are not being printed.
+
+You may use this page for scratch work. Note on the problem page if your work is on this page.
+\thispagestyle{{empty}}
+\hbox{{}}
+
+
+\checkoddpage\ifthenelse{{\boolean{{oddpage}}}}{{\newpage \thispagestyle{{empty}}{{}}
+}}
+\fi
+
+\end{{document}} 

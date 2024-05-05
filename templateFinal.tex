@@ -1,0 +1,66 @@
+\documentclass[main.tex,14pt]{{subfiles}}
+
+
+\begin{{document}}
+\setcounter{{page}}{{0}}
+\thispagestyle{{empty}}
+
+{{\Large {name}}}%%%this is pulled from a csv by my python code
+
+\ifprintanswers
+\else %Stuff to appear only when answers are not being printed.
+
+\vspace{{1cm}}
+{{\Large Instructions:}}
+\begin{{itemize}}
+
+ \item You have the entire exam period to complete this exam.
+ 
+ \item Once you are done with your exam, seal your completed exam inside the envelope, list the room you took the exam in, sign the Honor Code pledge on the envelope, and return it to the Exam Center, Chambers Lobby by \textbf{{12:15 pm}} (morning exams) or \textbf{{5:15 pm}} (afternoon exams).
+
+ \item The exam is closed-textbook, closed notes, and closed homework. 
+ 
+ \item No collaboration of any kind is permitted on this exam. Do not discuss the exam with anyone other than your instructor until after the graded exams are returned.
+ 
+ \item You may use a calculator that does not have internet access. 
+
+ \item \textbf{{Show all the steps of your work clearly}}. Demonstrating understanding includes clear explanations.
+ 
+\item Answer the questions on the Exam document. 
+
+
+\item Please do not distribute this exam once it is returned to you.
+
+
+
+ \end{{itemize}}
+
+
+\afterpage{{\unnumberedBlankpage}}
+
+\clearpage
+\fi
+
+{section_R0}
+
+{section_R1}
+
+{section_R2}
+
+{section_R3}
+
+{section_R4}
+
+\ifprintanswers
+\else %Stuff to appear only when answers are not being printed.
+
+\unnumberedBlankpage
+
+
+\checkoddpage\ifthenelse{{\boolean{{oddpage}}}}{{You may use this page for scratch work. Note on the problem page if your work is on this page.
+\thispagestyle{{empty}}
+\hbox{{}}
+}}
+\fi
+
+\end{{document}} 

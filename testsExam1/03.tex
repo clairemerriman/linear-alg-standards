@@ -1,0 +1,76 @@
+\documentclass[main.tex,14pt]{subfiles}
+
+\begin{document}
+\setcounter{page}{0}
+\thispagestyle{empty}
+
+{\Large Fourth Example}%%%this is pulled from a csv by my python code
+
+{Start time:\hrulefill\ End time: \hrulefill}
+Time limit: 75 minutes
+\ifprintanswers
+\else %Stuff to appear only when answers are not being printed.
+
+\vspace{1cm}
+{\Large Instructions:}
+\begin{itemize}
+
+ \item You have 1 hour 15 minutes to complete this exam.
+
+ \item The exam is closed-textbook, closed notes, and closed homework. 
+ 
+ \item No collaboration of any kind is permitted on this exam. Do not discuss the exam with anyone other than your instructor until after the graded exams are returned.
+ 
+ \item You may use a calculator that does not have internet access. 
+
+ \item \textbf{Show all the steps of your work clearly}. Demonstrating understanding includes clear explanations.
+ 
+\item Answer the questions on the Exam document. 
+
+
+\item Please do not distribute this exam once it is returned to you.
+
+
+
+ \end{itemize}
+
+
+\afterpage{\unnumberedBlankpage}
+
+\clearpage
+\fi
+
+
+ 
+
+{\Large Fourth Example}%%%this is pulled from a csv by my python code
+\section*{New Standards}
+ \begin{questions}
+\setcounter{question}{3}
+
+
+ \question \input{../poolR1/4.tex}
+
+ \question \input{../poolR1/5.tex}
+
+ \question \input{../poolR1/6.tex}
+ 
+  \question \input{../poolR1/7.tex}
+
+ \question \input{../poolR1/8.tex}
+ 
+\end{questions}
+
+\ifprintanswers
+\else %Stuff to appear only when answers are not being printed.
+
+\unnumberedBlankpage
+
+
+\checkoddpage\ifthenelse{\boolean{oddpage}}{You may use this page for scratch work. Note on the problem page if your work is on this page.
+\thispagestyle{empty}
+\hbox{}
+}
+\fi
+
+\end{document} 
